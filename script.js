@@ -1,38 +1,23 @@
-$('.carousel').owlCarousel({
-    loop:true,
-    margin:1,
-    nav:false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:3
-        }
-    }
-})
-
-
-$('.about-us-carousel').owlCarousel({
-    loop:true,
-    nav:true,
-    margin:18,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
-
-
-
-
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 2.5,
+    spaceBetween: 30,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      spaceBetween: 10,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });

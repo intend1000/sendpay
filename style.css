@@ -28,10 +28,60 @@ h1{
 }
 
 nav{
+    padding-top: 20px;
     display: flex;
-    justify-content: space-between;
+    column-gap: 94px;
+}
+
+nav div{
+    display: flex;
+}
+
+nav div p{
+    align-self: center;
+    white-space: nowrap;
+}
+
+.nav-first-block{
+    column-gap: 14px;
+}
+
+nav .nav-first-block p{
+    align-self: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #6C63FF;
+}
+
+.nav-second-block{
+    column-gap: 40px;
+}
+
+.nav-second-block, .nav-third-block p{
+    font-weight: 700;
+}
+
+.nav-buttons button{
+    width: 108px;
+    height: 40px;
+    border: 1.5px solid #B7B3B3;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.nav-buttons button:last-child{
+    background-color: #6C63FF;
+    color: #fff;
+}
+
+.nav-buttons{
+    display: flex;
+    column-gap: 14px;
+    justify-content: center;
     align-items: center;
 }
+
+
 
 .logo__wrapper, .buttons__wrapper, .links__wrapper ul{
     display: flex;
@@ -166,6 +216,7 @@ nav{
     row-gap: 21px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
 }
 
 .how__it__works__top__smallblock{
@@ -197,6 +248,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: none;
 }
 
 .card img{
@@ -411,7 +463,7 @@ nav{
 }
 
 .comments_block{
-    width: 100%;
+    /* width: 100%; */
     height: 306px;
     background: #fff;
     border-radius: 15px;
@@ -550,3 +602,14 @@ footer{
     font-weight: 500;
 }
 /* footer */
+
+.swiper{
+    width: 100%;
+    height: 320px;
+    position: relative;
+}
+
+.swiper-button-next{
+    position: absolute;
+    left: -90;
+}
